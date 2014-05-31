@@ -1,0 +1,144 @@
+.text-center {
+  text-align: center;
+}
+.wp-core-ui .button-lg {
+  padding: 20px;
+  font-size: 18px;
+  margin: 20px;
+  height: auto;
+}
+.wp-core-ui .button-lg:active {
+  padding: 20px;
+}
+.img-thumbnail {
+  border: 1px solid #ececec;
+  padding: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.cs_pb_section .cspb_sortable li {
+  margin: 15px 0 0 0;
+}
+.cs_pb_section .cspb_sortable li.ui-state-highlight {
+  padding: 20px;
+  background: #464646;
+}
+.cs_pb_section .cspb_sortable li a:hover i:before {
+  color: #dfdfdf;
+}
+.cs_pb_section .cspb_sortable li a i {
+  font-size: 18px;
+  color: #464646;
+}
+.cs_pb_section .cspb_sortable li a.cs_right {
+  float: right;
+}
+.cs_pb_section .cspb_sortable li a.cs_right:hover i:before {
+  color: #ff2828;
+}
+.cs_pb_section .cspb_sortable li span {
+  font-family: 'Open Sans', sans-serif;
+  color: #464646;
+  font-size: 14px;
+}
+.cs_pb_section .cspb_sortable li .item-content {
+  border: 1px solid #dfdfdf;
+  border-top: 0px solid #dfdfdf;
+  padding: 10px 0 0 0;
+  background: #ffffff;
+  padding: 15px;
+  display: none;
+}
+.cs_pb_section .cspb_sortable li .item-content .container {
+  display: inline;
+}
+.cs_pb_section .cspb_sortable li h3 {
+  border: 1px solid #dfdfdf;
+}
+.cs_pb_section .cspb_sortable li h3 .ui-accordion-header-icon {
+  float: left;
+  left: 0px;
+  position: relative;
+  margin: 0px;
+}
+.cs_pb_section .fa_icons_div {
+  display: none;
+}
+.button-group .button-default {
+  margin-left: -1px;
+}
+.button-group .button-default:first-child {
+  -webkit-border-radius: 5px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-radius: 5px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.button-group .button-default:last-child {
+  -webkit-border-radius: 0px;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius: 0px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-radius: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.button-group .button-default.active {
+  background: lightgreen;
+}
+.button-group {
+  border: 0px solid red;
+  background: none;
+}
+.button-group label {
+  display: inline;
+  padding: 5px;
+}
+.button-group label input[type=radio] {
+  display: none;
+}
+.mfp-inline-holder .mfp-content {
+  max-width: 1200px;
+}
+.mfp-inline-holder .mfp-content .fa_icons_div {
+  background: #FFF;
+}
+.mfp-inline-holder .mfp-content .fa_icons_div .container {
+  padding: 30px;
+}
+.mfp-inline-holder .mfp-content .fa_icons_div .container button {
+  margin: 5px;
+}
+.popup_content {
+  position: relative;
+  background: #FFF;
+  width: auto;
+  max-width: 500px;
+  padding: 10px;
+  margin: 20px auto;
+}
+.popup_content .section_button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  height: auto;
+  font-size: 16px;
+}
+.popup_content .section_button:active {
+  padding: 10px;
+}
+.popup_content span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+}

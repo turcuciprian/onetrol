@@ -1,0 +1,176 @@
+//Variables
+@color_greyDark: #464646;
+@color_grey: #dfdfdf;
+@color_greyLight: #ececec;
+@color_Light: #fff;
+@color_RedLight: #ff2828;
+
+@font_text: 'Open Sans', sans-serif;
+@font_title: 'Fjalla One', sans-serif;
+.text-center{
+    text-align: center;
+}
+.wp-core-ui{
+    .button-lg{
+        padding:20px;
+        font-size:18px;
+        margin:20px;
+        height:auto;
+        &:active{
+            padding:20px;
+        }
+    }
+}
+.img-thumbnail{
+    border:1px solid @color_greyLight;
+    padding:5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.cs_pb_section{ 
+    .cspb_sortable{
+        li{
+
+            margin:15px 0 0 0;
+            &.ui-state-highlight{
+                padding:20px;
+                background: @color_greyDark;
+            }
+            a{
+                &:hover{
+                    i{
+                        &:before{
+                            color:@color_grey;
+                        }
+                    }
+                }
+                i{
+                    font-size:18px;
+                    color:@color_greyDark;
+                }
+                &.cs_right{
+                    float:right;
+                    &:hover{
+                        i{
+                            &:before{
+                                color:@color_RedLight;   
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            span{
+                font-family: @font_text;
+                color:@color_greyDark;
+                font-size: 14px;
+            }
+            .item-content{
+                border:1px solid @color_grey;
+                border-top:0px solid @color_grey;
+                padding:10px 0 0 0;
+                background:@color_Light;
+                padding: 15px;
+                display:none;
+                .container{
+                    display:inline;
+                }
+            }
+            h3{
+                border:1px solid @color_grey;
+                .ui-accordion-header-icon{
+                    float:left;
+                    left:0px;
+                    position: relative;
+                    margin:0px;
+                }
+            }
+        }
+    }
+    .fa_icons_div{
+        display:none;
+    }
+}
+.button-group{
+    .button-default{
+        margin-left:-1px;
+        &:first-child{
+            -webkit-border-radius: 5px;
+            -webkit-border-top-right-radius: 0px;
+            -webkit-border-bottom-right-radius: 0px;
+            -moz-border-radius: 5px;
+            -moz-border-radius-topright: 0px;
+            -moz-border-radius-bottomright: 0px;
+            border-radius: 5px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+        &:last-child{
+            -webkit-border-radius: 0px;
+            -webkit-border-top-right-radius: 5px;
+            -webkit-border-bottom-right-radius: 5px;
+            -moz-border-radius: 0px;
+            -moz-border-radius-topright: 5px;
+            -moz-border-radius-bottomright: 5px;
+            border-radius: 0px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        &.active{
+            background:lightgreen;
+        }
+    }
+}
+.button-group{
+                border:0px solid red;
+                background:none;
+                label{ 
+                    display:inline;
+                    padding:5px;
+                    input[type=radio]{
+                        display:none;
+                    }
+                }
+            } 
+.mfp-inline-holder{
+    .mfp-content{
+        max-width:1200px;
+        .fa_icons_div{
+            background:#FFF;
+            .container{
+                padding:30px;
+                button{
+                    margin:5px;
+                }
+            }
+        }
+    }
+}
+.popup_content{
+    position: relative;
+    background: #FFF;
+    width: auto;
+    max-width: 500px;
+    padding:10px;
+    margin: 20px auto;
+    .section_button{
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        padding: 10px;
+        margin:5px;
+        height:auto;
+        font-size:16px;
+        &:active{
+            padding:10px;
+        }
+    }
+    span{
+        display:block;
+        width:100%;
+        text-align: center;
+        font-family: @font_title;
+    }
+}

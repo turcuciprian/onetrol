@@ -1,0 +1,707 @@
+/*
+Theme Name: OneTrol
+Author: turcuciprian
+Author URI: http://turcuciprian.com/
+Description: Onetrol is a blog WordPress theme, retina ready, responsive , mobile ready WordPress Theme with great design and functionality, top notch features and premium quality code and design
+Version: v 0.0.0.1
+License: GNU General Public License v2 or later
+License URI: http://www. gnu.org/licenses/gpl-2.0.html
+Tags: white,one-column, two-columns,fluid-layout
+*/
+/*dynamic rounded border*/
+/* 
+Main Style
+*/
+//Fonts
+@titleFont: 'Dosis',sans-serif;
+@contentFont: 'Open Sans', sans-serif;
+@extraFont: 'Open Sans Condensed', sans-serif;
+
+//colors
+@dark :#292929;
+@whiteopq: rgba(255,255,255,0.8);
+@white: #FFF;
+@green:#1ba839;
+@blue:#60ccd9;
+@white:#FFFFFF;
+@grey:#d4d4d4;
+@grey2:#b9b9b9;
+body{
+    margin:0px;
+    padding:0px;
+    background:red;
+}
+/*The header*/
+header{
+    background:@whiteopq;
+    position:fixed;
+    z-index: 100;
+    width:100%;
+    max-height:78px;
+    
+    &.fixed{
+        position:fixed;
+    }
+    .logo{
+        float:left;
+        display:inline-block;
+        a{
+            line-height:52px;
+            font-family: @titleFont;
+            font-size: 36px;
+            font-weight: 700;
+            padding:13px;
+            display:inline-block;
+            color:@dark;
+            &:hover{
+                text-decoration: none;
+            }
+            span{
+                color:@blue;
+            }
+            img{
+                max-height: 58px;
+                vertical-align: top;
+                display:inline;
+                margin:0px 0 0 10px;
+            }
+        }
+    }
+    .navigation_menu{
+        display:inline-block;
+        text-align: right;
+        float:right;
+        ul{
+            li{
+                float:left;
+                display:inline-block;
+                a{
+                    font-family: @extraFont;
+                    font-size:16px;
+                    color:@dark;
+                    font-weight: 300;
+                    padding:20px 20px;
+                    line-height: 38px;
+                    overflow:hidden;
+                    &:hover{
+                        background:@blue;
+                        color:@white;
+                    }
+                }
+                //hierarchical menu - 8 levels deep
+                &:hover{
+                    color:@blue;
+                    ul{
+                        display:block;
+                        li{
+                            &:hover{
+                                ul{
+                                    display:block;
+                                    li{
+                                        ul{
+                                            display:none;
+                                        }
+                                        &:hover{
+                                            ul{
+                                                display:block;
+                                                li{
+                                                    ul{
+                                                        display:none;
+                                                    }
+                                                    &:hover{
+                                                        ul{
+                                                            display:block;
+                                                            li{
+                                                                ul{
+                                                                    display:none;
+                                                                }
+                                                                &:hover{
+                                                                    ul{
+                                                                        display:block;
+                                                                        li{
+                                                                            ul{
+                                                                                display:none;
+                                                                            }
+                                                                            &:hover{
+                                                                                ul{
+                                                                                    display:block;
+                                                                                    li{
+                                                                                        ul{
+                                                                                            display:none;
+                                                                                        }
+                                                                                        &:hover{
+                                                                                            ul{
+                                                                                                display:block;
+                                                                                                li{
+                                                                                                    ul{
+                                                                                                        display:none;
+                                                                                                    }
+                                                                                                    &:hover{
+                                                                                                        ul{
+                                                                                                            display:block;
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            ul{
+                                margin-left:100%;
+                                display:none;
+                                ul{
+                                    display:none;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.menu-item-has-children{
+                    margin-top:-1px;
+                    &.extra_menu{
+                                    a{
+                                        &:after{
+                                            content: '';
+                                            float:right;
+                                            margin:0px;
+                                        }
+                                    }
+                                }
+                    a{
+                        &:after{
+                            font-family: 'FontAwesome', sans-serif;
+                            content: '\f107';
+                            font-size: 12px;
+                            margin-left:10px;
+                            margin-right:-10px;
+                            line-height: 16px;
+                            line-height: 17px;
+                            vertical-align: middle;
+                            display:inline-block;
+                        }
+                    }
+                    ul{
+                        border:1px solid @grey;
+                        li{
+                            a{
+                                &:after{
+                                    content: '';
+                                    margin-left:0px;
+                                    line-height: 18px;
+                                }
+                            }
+                            &.menu-item-has-children{
+                                a{
+                                    &:after{
+                                        content: '\f105';
+                                        float:right;
+                                        margin-right:15px;
+                                    }
+                                }  
+                                ul{
+                                    li{
+                                        a{
+                                            &:after{
+                                                content: '';
+                                                margin-left:0px;
+                                            }
+                                        }
+                                        &.menu-item-has-children{
+                                            a{
+                                                &:after{
+                                                    content: '\f105';
+                                                    float:right;
+                                                    margin-right:15px;
+                                                }
+                                            } 
+                                            ul{
+                                                li{
+                                                    a{
+                                                        &:after{
+                                                            content: '';
+                                                            margin-left:0px;
+                                                        }
+                                                    }
+                                                    &.menu-item-has-children{
+                                                        a{
+                                                            &:after{
+                                                                content: '\f105';
+                                                                float:right;
+                                                                margin-right:15px;
+                                                            }
+                                                        }  
+                                                        ul{
+                                                            li{
+                                                                a{
+                                                                    &:after{
+                                                                        content: '';
+                                                                        margin-left:0px;
+                                                                    }
+                                                                }
+                                                                &.menu-item-has-children{
+                                                                    a{
+                                                                        &:after{
+                                                                            content: '\f105';
+                                                                            float:right;
+                                                                            margin-right:15px;
+                                                                        }
+                                                                    }  
+                                                                    ul{
+                                                                        li{
+                                                                            a{
+                                                                                &:after{
+                                                                                    content: '';
+                                                                                    margin-left:0px;
+                                                                                }
+                                                                            }
+                                                                            &.menu-item-has-children{
+                                                                                a{
+                                                                                    &:after{
+                                                                                        content: '\f105';
+                                                                                        float:right;
+                                                                                        margin-right:15px;
+                                                                                    }
+                                                                                }
+                                                                                ul{
+                                                                                    li{
+                                                                                        a{
+                                                                                            &:after{
+                                                                                                content: '';
+                                                                                                margin-left:0px;
+                                                                                            }
+                                                                                        }
+                                                                                        &.menu-item-has-children{
+                                                                                            a{
+                                                                                                &:after{
+                                                                                                    content: '\f105';
+                                                                                                    float:right;
+                                                                                                    margin-right:15px;
+                                                                                                }
+                                                                                            }  
+                                                                                            ul{
+                                                                                                li{
+                                                                                                    a{
+                                                                                                        &:after{
+                                                                                                            content: '';
+                                                                                                            margin-left:0px;
+                                                                                                        }
+                                                                                                    }
+                                                                                                    &.menu-item-has-children{
+                                                                                                        a{
+                                                                                                            &:after{
+                                                                                                                content: '\f105';
+                                                                                                                float:right;
+                                                                                                                margin-right:15px;
+                                                                                                            }
+                                                                                                        } 
+                                                                                                        ul{
+                                                                                                            li{
+                                                                                                                a{
+                                                                                                                    &:after{
+                                                                                                                        content: '';
+                                                                                                                        margin-left:0px;
+                                                                                                                    }
+                                                                                                                }
+                                                                                                                &.menu-item-has-children{
+                                                                                                                    a{
+                                                                                                                        &:after{
+                                                                                                                            content: '\f105';
+                                                                                                                            float:right;
+                                                                                                                            margin-right:15px;
+                                                                                                                        }
+                                                                                                                    }  
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            /*submenu*/ 
+            ul{
+                background:@white;
+                position: absolute;
+                display:none;
+                z-index:100;
+                margin:0px;
+                padding:0px;
+                min-width:6em;
+                li{
+                    display:block;
+                    list-style-type:none;
+                    margin:0px;
+                    padding:0px;
+                    width:100%;
+                    text-align:left;
+                    a{
+                        float:left;
+                        width:100%;
+                        display: inline-block;
+                        padding:15px 0px 10px 20px;
+                        line-height:18px;
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .left_menu{
+        .logo{
+            float:right;
+        }
+        .navigation_menu{
+            float:left;
+        }
+    }
+    .center_menu{
+        text-align:center;
+        .logo{
+            float:none;
+            display:block
+        }
+        .navigation_menu{
+            float:none;
+            margin-bottom:-5px;
+            display:inline-block;
+            .nav{
+                border-top:1px solid @grey2;
+            }
+        }
+    }
+}
+section{
+    &:nth-child(2){
+        padding-top:80px;
+    }
+}
+/*
+**************************
+Media Queries
+**************************
+*/
+/* Ipad resolution */
+@media (max-width: 767px) {
+    body{
+        background:green;
+        header{
+            position:absolute;
+            .navigation_menu{
+                width:auto;
+                float:right;
+                display:inline-block;
+                position:relative;
+                #main_menu{
+                    height:0px;
+                    overflow:hidden;
+                    position: relative;
+                    display:block;
+                    float:right;
+                    width:auto;
+                    .ul_style{
+                        position: relative;
+                        display:inline-block;
+                        float:right; 
+                        width:100%;
+                        border:0px solid red;
+                        background:none;
+                    }
+                    li{
+                        position: relative;
+                        display:inline-block;
+                        float:left;
+                        width:100%;
+                        &.menu-item-has-children{
+                            a{
+                                float:left;
+                                width:100%;
+                                display:inline-block;
+                                line-height: 18px;
+                                &:before{
+                                    float:left;
+                                    line-height: 18px;
+                                    font-family: FontAwesome,sans-serif;
+                                    font-size:8px;
+                                    content: '\f04d';
+                                    margin-right:10px;
+                                    margin-left:10px;
+
+                                }
+                                &:after{
+                                    font-family: FontAwesome,sans-serif;
+                                    content:'';
+                                    margin:0px;
+                                    padding:0px;
+                                }
+
+                            }
+                            ul{
+                                padding-left:20px;
+                                li{
+                                    &.menu-item-has-children{
+                                        a{
+                                            line-height: 18px;
+                                            padding-left:15px;
+                                            &:before{
+
+                                                font-family: FontAwesome,sans-serif;
+                                                content: '\f04d';
+                                                margin-right:10px;
+                                                margin-left:10px;
+
+                                            }
+
+                                        }
+                                        ul{
+                                            li{
+                                                &.menu-item-has-children{
+                                                    a{
+                                                        line-height: 18px;
+                                                        &:before{
+                                                            font-family: FontAwesome,sans-serif;
+                                                            content: '\f04d';
+                                                            margin-right:10px;
+                                                            margin-left:10px;
+
+                                                        }
+
+                                                    }
+                                                    ul{
+                                                        li{
+                                                            &.menu-item-has-children{
+                                                                a{
+                                                                    line-height: 18px;
+                                                                    &:before{
+                                                                        font-family: FontAwesome,sans-serif;
+                                                                        content: '\f04d';
+                                                                        margin-right:10px;
+                                                                        margin-left:10px;
+
+                                                                    }
+
+                                                                }
+                                                                ul{
+                                                                    li{
+                                                                        &.menu-item-has-children{
+                                                                            a{
+                                                                                line-height: 18px;
+                                                                                &:before{
+                                                                                    font-family: FontAwesome,sans-serif;
+                                                                                    content: '\f04d';
+                                                                                    margin-right:10px;
+                                                                                    margin-left:10px;
+
+                                                                                }
+
+                                                                            }
+                                                                            ul{
+                                                                                li{
+                                                                                    &.menu-item-has-children{
+                                                                                        a{
+                                                                                            line-height: 18px;
+                                                                                            &:before{
+                                                                                                font-family: FontAwesome,sans-serif;
+                                                                                                content: '\f04d';
+                                                                                                margin-right:10px;
+                                                                                                margin-left:10px;
+
+                                                                                            }
+
+                                                                                        }
+                                                                                        ul{
+                                                                                            li{
+                                                                                                &.menu-item-has-children{
+                                                                                                    a{
+                                                                                                        line-height: 18px;
+                                                                                                        &:before{
+                                                                                                            font-family: FontAwesome,sans-serif;
+                                                                                                            content: '\f04d';
+                                                                                                            margin-right:10px;
+                                                                                                            margin-left:10px;
+
+                                                                                                        }
+
+                                                                                                    }
+                                                                                                    ul{
+                                                                                                        li{
+                                                                                                            &.menu-item-has-children{
+                                                                                                                a{
+                                                                                                                    line-height: 18px;
+                                                                                                                    &:before{
+                                                                                                                        font-family: FontAwesome,sans-serif;
+                                                                                                                        content: '\f04d';
+                                                                                                                        margin-right:10px;
+                                                                                                                        margin-left:10px;
+
+                                                                                                                    }
+
+                                                                                                                }
+                                                                                                                ul{
+                                                                                                                    li{
+                                                                                                                        a{
+                                                                                                                            &:before{
+                                                                                                                                margin:0px;
+                                                                                                                                font-family: FontAwesome,sans-serif;
+                                                                                                                                content: '';
+                                                                                                                            }
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                }
+                                                                                                            }
+                                                                                                            a{
+                                                                                                                &:before{
+                                                                                                                    margin:0px;
+                                                                                                                    font-family: FontAwesome,sans-serif;
+                                                                                                                    content: '';
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                                a{
+                                                                                                    &:before{
+                                                                                                        margin:0px;
+                                                                                                        font-family: FontAwesome,sans-serif;
+                                                                                                        content: '';
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                    a{
+                                                                                        &:before{
+                                                                                            margin:0px;
+                                                                                            font-family: FontAwesome,sans-serif;
+                                                                                            content: '';
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                        a{
+                                                                            &:before{
+                                                                                margin:0px;
+                                                                                font-family: FontAwesome,sans-serif;
+                                                                                content: '';
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                            a{
+                                                                &:before{
+                                                                    margin:0px;
+                                                                    font-family: FontAwesome,sans-serif;
+                                                                    content: '';
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                a{
+                                                    &:before{
+                                                        margin:0px;
+                                                        font-family: FontAwesome,sans-serif;
+                                                        content: '';
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    a{
+                                        &:before{
+                                            margin:0px;
+                                            font-family: FontAwesome,sans-serif;
+                                            content: '';
+                                        }
+                                        &:after{
+                                            font-family: FontAwesome,sans-serif;
+                                            content:'';
+                                            margin:0px;
+                                            padding:0px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        a{
+                            text-align: left;
+                            line-height: 18px;
+                            padding:15px 0px;
+                            padding-left:15px;
+                        }
+
+
+                    }
+                    ul{
+                        padding-right:0px;
+                        .ul_style;
+                    }
+                }
+            }
+            .left_menu{
+                .navbar-toggle{
+                    float:left;
+                }
+            }
+            .center_menu{
+                .navbar-toggle{
+                    float:none;
+                    display:inline-block;
+                    margin-bottom:0px;
+                }
+                .navigation_menu{
+                    .nav{
+                        border:0px solid red;                    
+                    }
+                }
+            }
+            .btn{
+                &.navbar-toggle{
+                    margin:19px;
+                }
+            }
+        }
+    }
+}
+/* Ipad resolution */
+@media (max-width: 600px) {
+    header{
+        &.fixed{
+            top:0px;
+        }
+    }
+}
