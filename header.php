@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+    <!--[if IE 8]><html lang="en" class="ie8" lang="en-US" > <![endif]-->  
+<!--[if !IE]> <html <?php language_attributes(); ?>><![endif]--> 
     <head>
         <title><?php bloginfo('name'); ?> | <?php
             bloginfo('description');
             wp_title('');
             ?></title>
         <meta charset="<?php bloginfo('charset'); ?>">
-        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=2">
+        <!-- Respond.js proxy on external server -->
         <?php
         wp_head();
         $csc_main = new CleanScriptCore();
