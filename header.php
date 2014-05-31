@@ -17,9 +17,9 @@
     </head>
     <body <?php body_class(); ?>>
         <?php
-        $citrix_options = get_option('citrix_options');
-        if (isset($citrix_options['menu_style']) && !empty($citrix_options['menu_style'])) {
-            switch ($citrix_options['menu_style']) {
+        $onetrol_options = get_option('onetrol_options');
+        if (isset($onetrol_options['menu_style']) && !empty($onetrol_options['menu_style'])) {
+            switch ($onetrol_options['menu_style']) {
                 case 0:
                     $menu_style = "";
                     break;
@@ -34,7 +34,7 @@
             $menu_style = "";
         }
         $logo_text = $csc_main->csc_title_replace(get_bloginfo('name'));
-        if (isset($citrix_options['logo_and_text']) && ($citrix_options['logo_and_text'] == 0 || $citrix_options['logo_and_text'] == 1 || empty($citrix_options['logo_and_text']))) {
+        if (isset($onetrol_options['logo_and_text']) && ($onetrol_options['logo_and_text'] == 0 || $onetrol_options['logo_and_text'] == 1 || empty($onetrol_options['logo_and_text']))) {
             $logo_text = $csc_main->csc_title_replace(get_bloginfo('name'));
         }
         ?>
@@ -45,17 +45,17 @@
                     <div class="col-sm-12">
                         <div class="cs_container <?php echo $menu_style; ?>">
                             <div class="logo">
-                                <?php if (empty($citrix_options['custom_logo'])) { ?>
+                                <?php if (empty($onetrol_options['custom_logo'])) { ?>
                                     <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo $csc_main->csc_title_replace(get_bloginfo('name')); ?></a>
                                 <?php } else { ?> 
                                     <a href="<?php echo esc_url(home_url('/')); ?>" class="img">
                                         <?php
                                         echo $logo_text;
 
-                                        $logo = stripslashes($citrix_options['custom_logo']);
+                                        $logo = stripslashes($onetrol_options['custom_logo']);
                                         $logo_id = $csc_main->cs_get_attachment_id_by_url($logo);
-                                        if (isset($citrix_options['logo_and_text']) && ($citrix_options['logo_and_text'] == 1 || $citrix_options['logo_and_text'] == 2)) {
-                                            echo wp_get_attachment_image($logo_id, 'citrix_logo', FALSE, array('class' => 'img-responsive'));
+                                        if (isset($onetrol_options['logo_and_text']) && ($onetrol_options['logo_and_text'] == 1 || $onetrol_options['logo_and_text'] == 2)) {
+                                            echo wp_get_attachment_image($logo_id, 'onetrol_logo', FALSE, array('class' => 'img-responsive'));
                                         }
                                         ?>
                                     </a>
@@ -71,14 +71,14 @@
                                 <!--Main menu list START-->
 
                                 <?php
-                                if (has_nav_menu('citrix_Menu')) {
+                                if (has_nav_menu('onetrol_Menu')) {
                                     //
                                     wp_nav_menu(
-                                            array('theme_location' => 'citrix_Menu',
+                                            array('theme_location' => 'onetrol_Menu',
                                                 'menu_id' => 'main_menu',
                                                 'menu_class' => 'nav collapsed',
                                                 'container' => FALSE,
-                                                'walker' => new citrix_nav_menu_theme_walker)
+                                                'walker' => new onetrol_nav_menu_theme_walker)
                                     );
                                 } else {
                                     $url = admin_url('nav-menus.php');

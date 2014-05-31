@@ -68,7 +68,7 @@ $currency = stripslashes($section['currency']);
                         </div>
                         <!--Value Container END-->
                         <!--Column buy now button container START-->
-                        <div class="citrix_button"><a href="<?php echo $column_button_link; ?>"><?php echo $column_button_text; ?></a></div>
+                        <div class="onetrol_button"><a href="<?php echo $column_button_link; ?>"><?php echo $column_button_text; ?></a></div>
                         <!--Column buy now button container END-->
                         <!--Features List START-->
                         <ul class="features">

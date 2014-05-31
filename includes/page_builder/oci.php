@@ -59,7 +59,7 @@ function csc_populate_callback() {
             ),
             0 => array(
                 'section_type' => 's_home',
-                'tcitrix_product_title' => 'A product that you',
+                'tonetrol_product_title' => 'A product that you',
                 'bottom_product_title' => 'Will truly appreciate',
                 'paragraph1_title' => 'Retina Ready',
                 'paragraph1_description' => 'The design is also Retina ready, all images come in 1x and 2x and the icons are fontawesome icons, so they can be of any size and still rezor sharp. Ready to look perfect on any screen of any resolution and any pixed density.',

@@ -13,7 +13,7 @@ $sections_array = array(
             0 => array(
                 'type' => 'textbox',
                 'text' => 'Top Product Title',
-                'name' => 'citrix_product_title',
+                'name' => 'onetrol_product_title',
                 'description' => 'The top, colored main title part of the product'
             )
         )
@@ -42,12 +42,12 @@ $mbg_array = array(
 );
 //The Appearannce -> Theme settings page settings
 $options_page_arr = array(
-    'option_name' => 'citrix_options',
-    'option_group' => 'citrix_option_group',
-    'page_name' => 'citrix_settings_page',
+    'option_name' => 'onetrol_options',
+    'option_group' => 'onetrol_option_group',
+    'page_name' => 'onetrol_settings_page',
     'sections' => array(
         0 => array(
-            'id' => 'tcitrix_menu_id',
+            'id' => 'tonetrol_menu_id',
             'title' => 'Top Menu',
             'fields' => array(
                 0 => array(

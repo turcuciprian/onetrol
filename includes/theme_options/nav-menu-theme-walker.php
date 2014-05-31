@@ -7,7 +7,7 @@
  * @since       1.0 
  * @return      void
  */
-class citrix_nav_menu_theme_walker extends Walker_Nav_Menu {
+class onetrol_nav_menu_theme_walker extends Walker_Nav_Menu {
 
     function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
         $indent = ( $depth ) ? str_repeat("\t", $depth) : '';

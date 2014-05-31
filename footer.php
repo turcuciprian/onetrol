@@ -1,4 +1,4 @@
-<?php $citrix_options = get_option('citrix_options');?>
+<?php $onetrol_options = get_option('onetrol_options');?>
 <!--Footer bar START-->
 <!--        <footer>
             main container grid START
@@ -12,7 +12,7 @@
                         Left footer text END
                         Right footer text START
                         <div class="right">
-                            <?php //echo $citrix_options['footer_text'];?>
+                            <?php //echo $onetrol_options['footer_text'];?>
                         </div>
                         Right footer text END
                     </div>

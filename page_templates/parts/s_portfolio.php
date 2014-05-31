@@ -58,7 +58,7 @@ $rgbcolor = '';
                     }
                     ?>
                     <a href="<?php echo $picture_link; ?>" class="<?php echo $popup_type; ?> magnific-popup-link">
-                        <?php echo wp_get_attachment_image($image_id, 'citrix_gallery', FALSE, array('class' => 'img-responsive')); ?>
+                        <?php echo wp_get_attachment_image($image_id, 'onetrol_gallery', FALSE, array('class' => 'img-responsive')); ?>
                         <div class="bottombar">
                             <span><?php echo get_post($image_id)->post_title; ?></span>
                             <div class="iconGrafic">

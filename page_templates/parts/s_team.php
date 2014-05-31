@@ -37,7 +37,7 @@ $section_color = stripslashes($section['section_color']);
                     <div class="person  isHidd">
                         <!--The image container START-->
                         <div class="picture img-responsive img-circle">
-                            <?php echo wp_get_attachment_image($picture_id, 'citrix_team', FALSE, array('class' => 'img-responsive img-circle')); ?>
+                            <?php echo wp_get_attachment_image($picture_id, 'onetrol_team', FALSE, array('class' => 'img-responsive img-circle')); ?>
                         </div>
                         <!--The image container END-->
                         <!--Title (name) START-->

@@ -1,6 +1,6 @@
 <?php
 
-class citrix_menu_walker extends Walker_Nav_Menu {
+class onetrol_menu_walker extends Walker_Nav_Menu {
 
     /**
      * @see Walker_Nav_Menu::start_lvl()
