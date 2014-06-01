@@ -3,19 +3,20 @@ Theme Name: OneTrol
 Author: turcuciprian
 Author URI: http://turcuciprian.com/
 Description: Onetrol is a blog WordPress theme, retina ready, responsive , mobile ready WordPress Theme with great design and functionality, top notch features and premium quality code and design
-Version: v 0.0.0.1
+Version: v 0.0.0.6
 License: GNU General Public License v2 or later
 License URI: http://www. gnu.org/licenses/gpl-2.0.html
 Tags: white,one-column, two-columns,fluid-layout
 */
 /*dynamic rounded border*/
-/* 
+/*
 Main Style
 */
 body {
   margin: 0px;
   padding: 0px;
   border: 0px solid red;
+  background: red;
 }
 /*The header*/
 header {
@@ -23,7 +24,44 @@ header {
   position: fixed;
   z-index: 100;
   width: 100%;
+  /*Logo container*/
 }
 header.fixed {
   position: fixed;
+}
+header .logo {
+  display: inline-block;
+  line-height: 39px;
+  float: left;
+  /*logo link*/
+}
+header .logo a {
+  float: left;
+  padding: 12px 0;
+  margin: 0px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: #333333;
+  /*colored text in logo using span*/
+}
+header .logo a span {
+  color: #60ccd9;
+  line-height: 39px;
+}
+header .logo a:hover {
+  text-decoration: none;
+}
+header .nav {
+  float: right;
+}
+header .nav li {
+  float: left;
+}
+header .nav li a {
+  padding: 21px 27px;
+}
+header .nav li ul {
+  display: none;
 }
