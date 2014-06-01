@@ -77,17 +77,17 @@ if (isset($section['section_subtitle'])) {
             <div class="col-sm-6 isHidd">
                 <h3><?php echo stripslashes($section['contact_form_title']); ?></h3>
                 <p><?php echo stripslashes($section['contact_form_description']); ?></p>
-                <?php $csc_cf7id = stripslashes($section['csc_cf7id']);
+                <?php $tc_cf7id = stripslashes($section['tc_cf7id']);
                 ?>
                 <?php
                 if (function_exists('wpcf7_add_shortcodes')) {
-                    $contact_form = do_shortcode('[contact-form-7 id="' . $csc_cf7id . '"]');
+                    $contact_form = do_shortcode('[contact-form-7 id="' . $tc_cf7id . '"]');
                     if (strpos($contact_form, '404 "Not Found"') === FALSE) {
                         echo $contact_form;
                     } else {
-                        $csc_admin_url = admin_url('admin.php?page=wpcf7-new');
+                        $tc_admin_url = admin_url('admin.php?page=wpcf7-new');
                         ?>
-                        <h4>Contact Form NOT set!</h4><a href="<?php echo $csc_admin_url; ?>">Click here to add a new one</a> Then set it in the contact Section from the dropdown.
+                        <h4>Contact Form NOT set!</h4><a href="<?php echo $tc_admin_url; ?>">Click here to add a new one</a> Then set it in the contact Section from the dropdown.
                         <?php
                     }
                 } else {
