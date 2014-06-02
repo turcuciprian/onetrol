@@ -2,6 +2,7 @@
 
 // global variable of the main class
 global $tcs_core;
+/*@var $tcs_core cs_core */
 $tcs_core = new tcs_core();
 
 //main core class

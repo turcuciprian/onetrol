@@ -4,6 +4,7 @@
 //**********************************************************
 //core library
 require_once ('includes/tcs_core.php');
+
 //image sizes
 if (function_exists('add_theme_support')) {
     //add support for the post thumbnails
